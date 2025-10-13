@@ -60,7 +60,51 @@ body {
     align-items: center; */
     /* gap: 16px; GAP GENERALE */
     row-gap: 16px;
-    column-gap: 32px;
+    column-gap: 0px;
+}
+
+
+@media (max-width: 480px) and (max-width:768px)  {
+
+    .container {
+        grid-template-rows: 30vh 25vh 80vh 25vh 25vh 25vh;
+        grid-template-columns: 100dvw;
+        grid-template-areas:
+            "header"
+            "menu"
+            "main"
+            "w1"
+            "w2"
+            "footer";
+        row-gap: 16px;
+        height: auto;
+
+
+    }
+    body{
+        height: auto
+    };
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: 30vh 25vh 80vh 25vh 25vh 25vh;
+        grid-template-columns: 50vh 50vh;
+        grid-template-areas:
+            "header header"
+            "menu menu"
+            "main"
+            "w1 w2"
+            "w1 w2"
+            "footer footer";
+        row-gap: 16px;
+        height: auto;
+
+
+    }
+    body{
+        height: auto
+    };
 }
 
 .area-header {
